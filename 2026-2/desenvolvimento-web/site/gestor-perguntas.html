@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perguntas — Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+
+      <nav aria-label="Navegação principal">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="main.html">Funcionalidades</a></li>
+            <li><a href="login.html">Sair</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Cadastrar e gerenciar perguntas</h1>
+
+      <section aria-labelledby="titulo-cadastro">
+        <h2 id="titulo-cadastro">Cadastrar pergunta</h2>
+
+        <p id="aviso">
+          Formulário de demonstração. Os dados ainda não são salvos.
+        </p>
+
+        <form
+          action="gestor-perguntas.html"
+          method="get"
+          aria-describedby="aviso"
+        >
+          <fieldset>
+            <legend>Dados da pergunta</legend>
+
+            <p>
+              <label for="categoria">Categoria (obrigatório):</label><br />
+              <select id="categoria" name="categoria" required>
+                <option value="">Selecione</option>
+                <option value="alunos">Alunos</option>
+                <option value="professores">Professores</option>
+                <option value="colaboradores">Colaboradores</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="pergunta">Pergunta (obrigatório):</label><br />
+              <textarea
+                id="pergunta"
+                name="pergunta"
+                rows="3"
+                cols="30"
+                required
+              ></textarea>
+            </p>
+
+            <p>
+              <label for="alternativa1">Alternativa 1 (obrigatório):</label
+              ><br />
+              <input
+                type="text"
+                id="alternativa1"
+                name="alternativa1"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="alternativa2">Alternativa 2 (obrigatório):</label
+              ><br />
+              <input
+                type="text"
+                id="alternativa2"
+                name="alternativa2"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="alternativa3">Alternativa 3 (obrigatório):</label
+              ><br />
+              <input
+                type="text"
+                id="alternativa3"
+                name="alternativa3"
+                required
+              />
+            </p>
+            <button type="submit">Cadastrar pergunta</button>
+            <button type="reset">Limpar formulário</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section aria-labelledby="titulo-exemplos">
+        <h2 id="titulo-exemplos">Exemplos de perguntas</h2>
+
+        <table>
+          <caption>
+            Perguntas de exemplo para a pesquisa
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Categoria</th>
+              <th scope="col">Pergunta</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Alunos</th>
+              <td>Como você avalia a infraestrutura da instituição?</td>
+            </tr>
+            <tr>
+              <th scope="row">Professores</th>
+              <td>Como você avalia os recursos disponíveis para as aulas?</td>
+            </tr>
+            <tr>
+              <th scope="row">Colaboradores</th>
+              <td>Como você avalia a comunicação entre os setores?</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p><a href="main.html">Voltar às funcionalidades</a></p>
+    </main>
+
+    <footer>
+      <p>2026 — Sistema de Gestão de Pesquisa de Satisfação.</p>
+    </footer>
+  </body>
+</html>

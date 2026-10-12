@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Códigos — Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+
+      <nav aria-label="Navegação principal">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="main.html">Funcionalidades</a></li>
+            <li><a href="login.html">Sair</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Gerar códigos anônimos</h1>
+
+      <p>
+        Os códigos permitem acessar a pesquisa sem informar o nome do
+        participante.
+      </p>
+
+      <section aria-labelledby="titulo-configuracao">
+        <h2 id="titulo-configuracao">Configurar códigos</h2>
+
+        <p id="aviso">
+          Formulário de demonstração. A geração automática será implementada
+          futuramente.
+        </p>
+
+        <form
+          action="gerador-codigos.html"
+          method="get"
+          aria-describedby="aviso"
+        >
+          <fieldset>
+            <legend>Dados para geração</legend>
+
+            <p>
+              <label for="categoria">Categoria (obrigatório):</label><br />
+              <select id="categoria" name="categoria" required>
+                <option value="">Selecione</option>
+                <option value="alunos">Alunos</option>
+                <option value="professores">Professores</option>
+                <option value="colaboradores">Colaboradores</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="quantidade"
+                >Quantidade de códigos (obrigatório):</label
+              ><br />
+              <input
+                type="number"
+                id="quantidade"
+                name="quantidade"
+                min="1"
+                max="1000"
+                required
+              />
+            </p>
+            <button type="submit">Gerar códigos</button>
+            <button type="reset">Limpar formulário</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section aria-labelledby="titulo-exemplos">
+        <h2 id="titulo-exemplos">Exemplos de códigos</h2>
+
+        <table>
+          <caption>
+            Códigos fictícios para demonstração
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Situação</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">ALU-A7K2</th>
+              <td>Alunos</td>
+              <td>Disponível</td>
+            </tr>
+            <tr>
+              <th scope="row">PRO-B9M4</th>
+              <td>Professores</td>
+              <td>Disponível</td>
+            </tr>
+            <tr>
+              <th scope="row">COL-C3P8</th>
+              <td>Colaboradores</td>
+              <td>Utilizado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p><a href="main.html">Voltar às funcionalidades</a></p>
+    </main>
+
+    <footer>
+      <p>2026 — Projeto acadêmico desenvolvido pelo nosso grupo.</p>
+    </footer>
+  </body>
+</html>

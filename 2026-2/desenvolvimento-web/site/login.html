@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de login do Sistema de Gestão de Pesquisa de Satisfação."
+    />
+    <title>Login — Pesquisa de Satisfação</title>
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+      <nav aria-label="Navegação principal">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html" aria-current="page">Login</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <section aria-labelledby="titulo-login">
+        <h1 id="titulo-login">Login no sistema</h1>
+        <p id="orientacao-login">
+          Preencha seu usuário e sua senha para acessar as funcionalidades do
+          sistema.
+        </p>
+
+        <form
+          action="main.html"
+          method="get"
+          aria-describedby="orientacao-login"
+        >
+          <fieldset>
+            <legend>Dados de acesso</legend>
+
+            <p>
+              <label for="usuario">Usuário (obrigatório):</label><br />
+              <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                minlength="4"
+                maxlength="30"
+                autocomplete="username"
+                aria-describedby="ajuda-usuario"
+                required
+              />
+              <br />
+              <small id="ajuda-usuario"
+                >Informe o usuário com no mínimo quatro caracteres.</small
+              >
+            </p>
+
+            <p>
+              <label for="senha">Senha (obrigatório):</label><br />
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                minlength="6"
+                maxlength="20"
+                autocomplete="current-password"
+                aria-describedby="ajuda-senha"
+                required
+              />
+              <br />
+              <small id="ajuda-senha"
+                >A senha deve possuir no mínimo seis caracteres.</small
+              >
+            </p>
+
+            <p>
+              <input type="checkbox" id="lembrar" name="lembrar" value="sim" />
+              <label for="lembrar">Lembrar meu usuário neste dispositivo</label>
+            </p>
+
+            <button type="submit">Entrar</button>
+            <button type="reset">Limpar formulário</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 — Área de acesso ao sistema.</p>
+      <p><a href="index.html">Voltar para a página inicial</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorias — Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+
+      <nav aria-label="Navegação principal">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="main.html">Funcionalidades</a></li>
+            <li><a href="login.html">Sair</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Gerenciar categorias de participantes</h1>
+
+      <p>
+        As categorias organizam os participantes da pesquisa em alunos,
+        professores e colaboradores.
+      </p>
+
+      <section aria-labelledby="titulo-cadastro">
+        <h2 id="titulo-cadastro">Cadastrar categoria</h2>
+
+        <p id="aviso-cadastro">
+          Este formulário é uma demonstração. Os dados ainda não são salvos.
+        </p>
+
+        <form
+          action="gestor-categorias.html"
+          method="get"
+          aria-describedby="aviso-cadastro"
+        >
+          <fieldset>
+            <legend>Dados da categoria</legend>
+
+            <p>
+              <label for="categoria">Nome da categoria (obrigatório):</label>
+              <input
+                type="text"
+                id="categoria"
+                name="categoria"
+                maxlength="50"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="descricao">Descrição:</label><br />
+              <textarea
+                id="descricao"
+                name="descricao"
+                rows="3"
+                cols="30"
+              ></textarea>
+            </p>
+            <button type="submit">Cadastrar categoria</button>
+            <button type="reset">Limpar formulário</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section aria-labelledby="titulo-categorias">
+        <h2 id="titulo-categorias">Categorias previstas</h2>
+
+        <table>
+          <caption>
+            Categorias de participantes da pesquisa
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Categoria</th>
+              <th scope="col">Descrição</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Alunos</th>
+              <td>Estudantes da instituição.</td>
+            </tr>
+            <tr>
+              <th scope="row">Professores</th>
+              <td>Docentes da instituição.</td>
+            </tr>
+            <tr>
+              <th scope="row">Colaboradores</th>
+              <td>Funcionários dos demais setores da instituição.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p><a href="main.html">Voltar às funcionalidades</a></p>
+    </main>
+
+    <footer>
+      <p>2026 — Sistema de Gestão de Pesquisa de Satisfação.</p>
+    </footer>
+  </body>
+</html>

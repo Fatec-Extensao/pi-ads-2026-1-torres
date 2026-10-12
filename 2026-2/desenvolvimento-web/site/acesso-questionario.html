@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acesso à pesquisa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+
+      <nav aria-label="Navegação principal">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="main.html">Funcionalidades</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Acessar a pesquisa</h1>
+
+      <p id="orientacao">
+        Informe o código disponibilizado pela instituição para abrir o
+        questionário.
+      </p>
+
+      <form
+        action="questionario.html"
+        method="get"
+        aria-describedby="orientacao aviso"
+      >
+        <fieldset>
+          <legend>Acesso do participante</legend>
+
+          <p>
+            <label for="codigo">Código de acesso (obrigatório):</label><br />
+            <input type="text" id="codigo" name="codigo" required />
+          </p>
+
+          <button type="submit">Acessar questionário</button>
+        </fieldset>
+      </form>
+
+      <p id="aviso">
+        Nesta etapa, o código é obrigatório, mas sua validade ainda não é
+        verificada.
+      </p>
+    </main>
+
+    <footer>
+      <p>2026 — Projeto acadêmico desenvolvido pelo nosso grupo.</p>
+    </footer>
+  </body>
+</html>

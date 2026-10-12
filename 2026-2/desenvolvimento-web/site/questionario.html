@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionário — Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+
+      <nav aria-label="Navegação principal">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="main.html">Funcionalidades</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Responder ao questionário</h1>
+
+      <p id="orientacao">
+        Selecione uma alternativa por pergunta, o envio verifica os campos
+        obrigatórios.
+      </p>
+
+      <form
+        action="questionario.html"
+        method="get"
+        aria-describedby="orientacao"
+      >
+        <fieldset>
+          <legend>
+            1. Como você avalia a infraestrutura da instituição? (obrigatório)
+          </legend>
+
+          <p>
+            <input
+              type="radio"
+              id="infra-boa"
+              name="infraestrutura"
+              value="boa"
+              required
+            />
+            <label for="infra-boa">Boa</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="infra-regular"
+              name="infraestrutura"
+              value="regular"
+            />
+            <label for="infra-regular">Regular</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="infra-ruim"
+              name="infraestrutura"
+              value="ruim"
+            />
+            <label for="infra-ruim">Ruim</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            2. Como você avalia a comunicação da instituição? (obrigatório)
+          </legend>
+
+          <p>
+            <input
+              type="radio"
+              id="com-boa"
+              name="comunicacao"
+              value="boa"
+              required
+            />
+            <label for="com-boa">Boa</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="com-regular"
+              name="comunicacao"
+              value="regular"
+            />
+            <label for="com-regular">Regular</label>
+          </p>
+
+          <p>
+            <input type="radio" id="com-ruim" name="comunicacao" value="ruim" />
+            <label for="com-ruim">Ruim</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            3. Como você avalia o atendimento da instituição? (obrigatório)
+          </legend>
+
+          <p>
+            <input
+              type="radio"
+              id="atend-bom"
+              name="atendimento"
+              value="bom"
+              required
+            />
+            <label for="atend-bom">Bom</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="atend-regular"
+              name="atendimento"
+              value="regular"
+            />
+            <label for="atend-regular">Regular</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="atend-ruim"
+              name="atendimento"
+              value="ruim"
+            />
+            <label for="atend-ruim">Ruim</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar respostas</button>
+          <button type="reset">Limpar respostas</button>
+        </p>
+      </form>
+
+      <p><a href="main.html">Voltar às funcionalidades</a></p>
+    </main>
+
+    <footer>
+      <p>2026 — Projeto acadêmico desenvolvido pelo nosso grupo.</p>
+    </footer>
+  </body>
+</html>

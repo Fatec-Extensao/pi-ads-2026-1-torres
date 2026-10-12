@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página principal e menu de funcionalidades do Sistema de Gestão de Pesquisa de Satisfação."
+    />
+    <title>Página principal — Pesquisa de Satisfação</title>
+  </head>
+
+  <body>
+    <a href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header>
+      <p><strong>Sistema de Gestão de Pesquisa de Satisfação</strong></p>
+      <nav aria-label="Navegação do sistema">
+        <details>
+          <summary>Menu de navegação</summary>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li>
+              <a href="main.html" aria-current="page">Página principal</a>
+            </li>
+            <li><a href="login.html">Sair</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <section aria-labelledby="titulo-boas-vindas">
+        <h1 id="titulo-boas-vindas">Bem-vindo ao sistema</h1>
+        <p>
+          Nesta página estão reunidas as funcionalidades previstas para o
+          Sistema de Gestão de Pesquisa de Satisfação.
+        </p>
+      </section>
+
+      <section aria-labelledby="titulo-funcionalidades">
+        <h2 id="titulo-funcionalidades">Funcionalidades</h2>
+
+        <nav aria-label="Menu de funcionalidades">
+          <ul>
+            <li>
+              <a href="gestor-categorias.html"
+                >Gerenciar categorias de participantes</a
+              >
+            </li>
+            <li>
+              <a href="gestor-perguntas.html"
+                >Cadastrar e gerenciar perguntas</a
+              >
+            </li>
+            <li><a href="gerador-codigos.html">Gerar códigos anônimos</a></li>
+            <li>
+              <a href="acesso-questionario.html">Responder ao questionário</a>
+            </li>
+            <li>
+              <a href="gestor-participacao.html">Acompanhar a participação</a>
+            </li>
+            <li><a href="gestor-relatorios.html">Consultar relatórios</a></li>
+          </ul>
+        </nav>
+
+        <table>
+          <caption>
+            Resumo das funcionalidades previstas
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Funcionalidade</th>
+              <th scope="col">Usuário responsável</th>
+              <th scope="col">Objetivo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Categorias</th>
+              <td>Gestor</td>
+              <td>Organizar alunos, professores e colaboradores.</td>
+            </tr>
+            <tr>
+              <th scope="row">Perguntas</th>
+              <td>Gestor</td>
+              <td>
+                Cadastrar perguntas de múltipla escolha para cada categoria.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Códigos anônimos</th>
+              <td>Gestor</td>
+              <td>
+                Disponibilizar códigos de acesso sem identificar o participante.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Questionário</th>
+              <td>Participante</td>
+              <td>Responder à pesquisa de satisfação.</td>
+            </tr>
+            <tr>
+              <th scope="row">Participação</th>
+              <td>Gestor</td>
+              <td>Acompanhar a quantidade de respostas recebidas.</td>
+            </tr>
+            <tr>
+              <th scope="row">Relatórios</th>
+              <td>Gestor</td>
+              <td>Consultar os resultados da pesquisa.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside aria-labelledby="titulo-observacao">
+        <h2 id="titulo-observacao">Observação</h2>
+        <p>
+          Nesta etapa, o site utiliza somente HTML. As funções de salvar,
+          validar o login e gerar códigos serão implementadas futuramente.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>2026 — Sistema de Gestão de Pesquisa de Satisfação.</p>
+      <p><a href="login.html">Sair do sistema</a></p>
+    </footer>
+  </body>
+</html>
