@@ -1,34 +1,12 @@
 **FATEC – ADS I**
 
- 
-
- 
-
-**Engenharia de Software II**
+ **Engenharia de Software II**
 
 Diagrama de Atividades
 
       	
-
- 
-
- 
-
- 
-
- 
-
- 
-
 08/09
 
- 
-
- 
-
- 
-
- 
 
 **Integrantes:**
 
@@ -58,37 +36,7 @@ Yara Torres de Souza
 10. Considerações Finais  
 11. Referências
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  **1\.   	Estudo de caso**
 
@@ -170,26 +118,6 @@ O acesso dos participantes será controlado por códigos anônimos, individuais 
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
  **5\.   	ATORES**
 
 ●      Gestor da pesquisa  
@@ -214,54 +142,7 @@ O acesso dos participantes será controlado por códigos anônimos, individuais 
 | Participante | Acessar questionário    | Ao acessar o questionário, o participante responderá as perguntas a ele designadas e as respostas que o serão salvas no banco de dados; |
 | Participante | Solicitar novo código anônimo | O participante recebe instruções para contatar o gestor e obter outro código, sem quebrar o anonimato. |
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
- **7\.   	DIAGRAMA DE CASOS DE USO**  
-   
-**7.1 	Cadastro de perguntas e alternativas:**  
-**![][image1]**  
- 
 
-   
-**7.2    	Gerar códigos anônimos de uso único:**  
-   
-**![][image2]**  
- 
-
-   
-**7.3 	Acessar questionário:**  
-   
-**![][image3]**  
-  **7.4    	Monitorar participação em tempo real** 
-
- **![][image4]**  
- 
-
-**7.5 	Criar relatórios estatísticos**  
-**![][image5]**
-
-**7.6 Manter categoria**
-
-**![][image6]**  
-   
- 
-
- 
 
 **8\.   	FLUXOS PRINCIPAIS E ALTERNATIVOS**
 
@@ -289,8 +170,6 @@ O acesso dos participantes será controlado por códigos anônimos, individuais 
 2. O Sistema identifica que a pergunta está sem enunciado ou sem alternativas cadastradas.  
 3. O Sistema exibe a mensagem "Erro: Preencha o enunciado ou no cadastro da alternativa".  
 4. O Sistema retorna ao passo 3 do Fluxo Principal.
-
- 
 
  
 
@@ -380,10 +259,6 @@ O Gestor confirma a mensagem.
 O Sistema mantém o painel aberto e permite uma nova tentativa de atualização.
 
    
-   
- 
-
-   
 **8.5 	Gerar relatórios estatísticos**
 
  **Fluxo principal**
@@ -442,30 +317,6 @@ O Sistema mantém o painel aberto e permite uma nova tentativa de atualização.
 6. O **Sistema atualiza os dados no banco de dados** com a nova categoria selecionada.  
 7. O fluxo é encerrado.
 
-**9\.	DIAGRAMAS DE ATIVIDADE**
-
-**9.1	Cadastro de perguntas e alternativas**
-
-**![][image7]**
-
-**9.2	Gerar códigos anônimos de uso único**
-
-**![][image8]**
-
-**9.3	Acessar questionário**
-
-**![][image9]**
-
-**9.4	Monitorar participação em tempo real**
-
-**![][image10]**
-
-**9.5	Criar relatórios estatísticos**
-
-**![][image11]**
-
-**9.6	Manter categorias**  
-**![][image12]**
 
 **10\.	CONSIDERAÇÕES FINAIS**
 
