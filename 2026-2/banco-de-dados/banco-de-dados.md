@@ -2,6 +2,10 @@
 
 Observação: Aluno não é uma entidade porque entidade é aquilo que o banco de dados armazena, enquanto o sistema foi pensado para não identificar quem responde o questionário. Aluno é então um ator (que interage com o sistema).
 
+**Modelo Entidade-Relacionamento**
+
+![Entidade-Relacionamento](imagens/modelo-entidade-relacionamento.png)
+
 **Mapeamento:**
 
 Gestor: \*id\_gestor, nome, e-mail, senha  
