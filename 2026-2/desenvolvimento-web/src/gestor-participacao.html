@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatórios — Pesquisa de Satisfação</title>
+    <title>Participação — Pesquisa de Satisfação</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -26,75 +26,67 @@
     </header>
 
     <main id="conteudo-principal">
-      <h1>Consultar relatórios</h1>
+      <h1>Acompanhar a participação</h1>
 
       <p>
-        Consulte o resumo das avaliações da instituição, sem identificar os
-        participantes.
+        Esta página apresenta a quantidade de respostas por categoria, sem
+        identificar os participantes.
       </p>
 
-      <p>
-        Ainda não há participações registradas. Nesta etapa, os números não são
-        atualizados automaticamente.
-      </p>
-
-      <section aria-labelledby="titulo-resultados">
-        <h2 id="titulo-resultados">Resultados da pesquisa</h2>
+      <section aria-labelledby="titulo-resumo">
+        <h2 id="titulo-resumo">Resumo da participação</h2>
 
         <p>
-          Os dados abaixo são fictícios e demonstram como os resultados poderão
-          ser apresentados.
+          Os números abaixo são fictícios e servem para demonstrar a tela. Ainda
+          não são atualizados pelas respostas do questionário.
         </p>
 
-        <table>
+        <div class="tabela-responsiva" role="region" aria-label="Tabela de dados — role para visualizar" tabindex="0">
+<table>
           <caption>
-            Resumo das avaliações
+            Exemplo de participação por categoria
           </caption>
 
           <thead>
             <tr>
-              <th scope="col">Aspecto avaliado</th>
-              <th scope="col">Bom ou boa</th>
-              <th scope="col">Regular</th>
-              <th scope="col">Ruim</th>
-              <th scope="col">Total</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Códigos distribuídos</th>
+              <th scope="col">Respostas recebidas</th>
+              <th scope="col">Participação</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">Infraestrutura</th>
+              <th scope="row">Alunos</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0%</td>
             </tr>
             <tr>
-              <th scope="row">Comunicação</th>
+              <th scope="row">Professores</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0%</td>
             </tr>
             <tr>
-              <th scope="row">Atendimento</th>
+              <th scope="row">Colaboradores</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0%</td>
             </tr>
           </tbody>
+
+          <tfoot>
+            <tr>
+              <th scope="row">Total</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0%</td>
+            </tr>
+          </tfoot>
         </table>
-      </section>
-
-      <section aria-labelledby="titulo-resumo">
-        <h2 id="titulo-resumo">Resumo dos resultados</h2>
-
-        <ul>
-          <li>O atendimento recebeu mais avaliações positivas.</li>
-          <li>A comunicação recebeu mais avaliações negativas.</li>
-          <li>A infraestrutura teve 50 avaliações positivas.</li>
-        </ul>
+        </div>
       </section>
 
       <p><a href="main.html">Voltar às funcionalidades</a></p>

@@ -8,6 +8,7 @@
       content="Página principal e menu de funcionalidades do Sistema de Gestão de Pesquisa de Satisfação."
     />
     <title>Página principal — Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -64,7 +65,8 @@
           </ul>
         </nav>
 
-        <table>
+        <div class="tabela-responsiva" role="region" aria-label="Tabela de dados — role para visualizar" tabindex="0">
+<table>
           <caption>
             Resumo das funcionalidades previstas
           </caption>
@@ -112,12 +114,13 @@
             </tr>
           </tbody>
         </table>
+        </div>
       </section>
 
       <aside aria-labelledby="titulo-observacao">
         <h2 id="titulo-observacao">Observação</h2>
         <p>
-          Nesta etapa, o site utiliza somente HTML. As funções de salvar,
+          Nesta etapa, o site utiliza HTML e CSS. As funções de salvar,
           validar o login e gerar códigos serão implementadas futuramente.
         </p>
       </aside>
