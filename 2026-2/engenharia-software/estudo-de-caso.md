@@ -149,27 +149,27 @@ O acesso dos participantes será controlado por códigos anônimos, individuais 
 
 ### 7.1 Cadastro de perguntas e alternativas
 
-![Diagrama de casos de uso: Cadastro de perguntas e alternativas](imagens/caso-uso-7-1-cadastro-perguntas.png)
+![Diagrama de casos de uso: Cadastro de perguntas e alternativas](imagens/caso1.png)
 
 ### 7.2 Gerar códigos anônimos de uso único
 
-![Diagrama de casos de uso: Gerar códigos anônimos de uso único](imagens/caso-uso-7-2-gerar-codigos.png)
+![Diagrama de casos de uso: Gerar códigos anônimos de uso único](imagens/caso2.png)
 
 ### 7.3 Acessar questionário
 
-![Diagrama de casos de uso: Acessar questionário](imagens/caso-uso-7-3-acessar-questionario.png)
+![Diagrama de casos de uso: Acessar questionário](imagens/caso3.png)
 
 ### 7.4 Monitorar participação em tempo real
 
-![Diagrama de casos de uso: Monitorar participação em tempo real](imagens/caso-uso-7-4-monitorar-participacao.png)
+![Diagrama de casos de uso: Monitorar participação em tempo real](imagens/caso4.png)
 
 ### 7.5 Criar relatórios estatísticos
 
-![Diagrama de casos de uso: Criar relatórios estatísticos](imagens/caso-uso-7-5-relatorios-estatisticos.png)
+![Diagrama de casos de uso: Criar relatórios estatísticos](imagens/caso5.png)
 
 ### 7.6 Manter categoria
 
-![Diagrama de casos de uso: Manter categoria](imagens/caso-uso-7-6-manter-categoria.png)
+![Diagrama de casos de uso: Manter categoria](imagens/caso6.png)
 
 ---
 
