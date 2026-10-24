@@ -7,7 +7,7 @@ Observação: Aluno não é uma entidade porque entidade é aquilo que o banco d
 
 ![Entidade-Relacionamento](imagens/modelo-entidade-relacionamento.png)
 
-# Mapeamento:
+## Mapeamento:
 
 Gestor: \*id\_gestor, nome, e-mail, senha  
 Pesquisa: \*id\_pesquisa, titulo, data\_inicio, data\_fim, \--id\_gestor  
@@ -19,7 +19,7 @@ Participante: \*id\_codigo,hash\_codigo,utilizador (boolean),--id\_questionario
 Resposta: \*id\_resposta,--id\_pergunta,--id\_alternativa
 
 
-# Normalização
+## Normalização
 
 O mapeamento atual está normalizado. Justificativa:
 1 F.N : Todos os atributos são monovalorados e atômicos.
