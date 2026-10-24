@@ -1,12 +1,13 @@
-**Entidades:** GESTOR, CATEGORIA, PERGUNTA, ALTERNATIVA, QUESTIONÁRIO, CÓDIGO\_ANÔNIMO, PESQUISA, SUBMISSÃO e RESPOSTA.
+## Entidades:
+GESTOR, CATEGORIA, PERGUNTA, ALTERNATIVA, QUESTIONÁRIO, CÓDIGO\_ANÔNIMO, PESQUISA, SUBMISSÃO e RESPOSTA.
 
 Observação: Aluno não é uma entidade porque entidade é aquilo que o banco de dados armazena, enquanto o sistema foi pensado para não identificar quem responde o questionário. Aluno é então um ator (que interage com o sistema).
 
-**Modelo Entidade-Relacionamento**
+## Modelo Entidade-Relacionamento:
 
 ![Entidade-Relacionamento](imagens/modelo-entidade-relacionamento.png)
 
-**Mapeamento:**
+# Mapeamento:
 
 Gestor: \*id\_gestor, nome, e-mail, senha  
 Pesquisa: \*id\_pesquisa, titulo, data\_inicio, data\_fim, \--id\_gestor  
@@ -18,7 +19,7 @@ Participante: \*id\_codigo,hash\_codigo,utilizador (boolean),--id\_questionario
 Resposta: \*id\_resposta,--id\_pergunta,--id\_alternativa
 
 
-**Normalização**
+# Normalização
 
 O mapeamento atual está normalizado. Justificativa:
 1 F.N : Todos os atributos são monovalorados e atômicos.
