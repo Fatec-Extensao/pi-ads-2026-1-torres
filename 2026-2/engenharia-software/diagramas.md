@@ -16,4 +16,8 @@
 
 ## Diagrama de Classes
 
-![Diagrama de classes](imagens/diagrama-classes.jpeg)
+![Diagrama de Classes](imagens/diagrama-classes.jpeg)
+
+## Diagrama de Sequência
+
+![Diagrama de Sequência](imagens/diagrama-sequencia.jpeg)
